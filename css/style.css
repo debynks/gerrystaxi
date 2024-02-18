@@ -617,7 +617,35 @@ main .details .grid-wrapper .description h3 {
     text-shadow: 0rem .02rem 0rem #fff;
   }
 
-main .details .grid-wrapper .description h1 span {
+  main .details .grid-wrapper.speak .description ul {
+    list-style-type: none;
+    padding-left: 1rem;
+    width: 95%;
+  }
+  
+  main .details .grid-wrapper.speak .description li {
+    margin-bottom: 0rem;
+    color: var(--jb-cultured);
+    font-size: 100%;
+    font-weight: 500;
+    text-align: left;
+    text-shadow: 0rem .02rem 0rem #fff;
+    font-family: var(--Firasans);
+  }
+  
+  main .details .grid-wrapper.speak .description li::before {
+    content: "✓";
+    color: #007bff;
+    font-weight: bold;
+    display: flex;
+    width: 1em;
+    margin-left: -1.5em;
+    align-self: self-start;
+    position: relative;
+    top: 1rem;
+  }
+
+main .details .grid-wrapper .description h2 span {
     font-weight: 100;
     border-bottom: .01rem solid var(--jb-yellow);
     text-transform: capitalize;
