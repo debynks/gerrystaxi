@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.css">
     <!-------------- Font-Awesome Styles -------------->
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    
     <!-------------- Custom Styles -------------->
     <link rel="stylesheet" href="css/style.css">
 
@@ -75,8 +76,8 @@
         <section class="site-title">
             <div class="site-background">
                 <div class="overlay"></div>
-                <h3 class="text-shadow"> We wiil take you Wherever you need </h3>
-                <h1 class="text-shadow"> Gerry's Taxi </h1>
+                <h3 class="text-shadow"> We wiil take you wherever you need </h3>
+                <h1 class="text-shadow"> Gerry's Taxi + <br> Tecumseh & Lakeshore Taxi</h1>
                 <button><a href="tel:5197351555 ">Call: 519-735-1555  <span><i class="fas fa-arrow-circle-right"></i></span> </a></button>
             </div>
         </section>
@@ -117,7 +118,7 @@
                 
             </div>
             <!--------x----- Category Links  -------x------>
-            <!-------------- Testimonial Video  -------------->
+            <!-------------- About Us Board  -------------->
 
             <div class="grid-wrapper speak">
 
@@ -144,7 +145,7 @@
                 </div>
 
             </div>
-            <!--------x----- Testimonial Video  -------x------>
+            <!--------x----- About Us Board   -------x------>
             <!-------------- Groups  -------------->
             <div class="titletag ">
                 <h1> Our Services</h1>
@@ -214,23 +215,28 @@
         <!-------x------  Section Site Content  --------x----->
         <!--------------  Section Testimonials  -------------->
         <section class="testimonials ">
-            <div class="imgdecor ">
-                <img src="images/gerrys_taxi.png " alt=" " style="width: 25rem;">
-            </div>
-            <div class="titletag ">
-                <h1> Testimonials from our beloved Customers</h1>
-                <span class="iconholder "> <i class="flaticon-support "></i>     </span>
-                <h3> Seamlessly distributing Care. </h3>
-            </div>
-            <div class="grid-wrapper grid-2 ">
-                <div class="photospace ">
-                    <span> <img src="images/joe_clockwood.jpg " alt=" "> </span>
-                    <h3>Joe Clockwood - Lakeshore </h3>
-                    <p>- Lakeshore, Canada</p>
+            <div class="t_wrap">
+                <div class="imgdecor ">
+                    <img src="images/gerrys_taxi.png " alt=" " style="width: 25rem;">
                 </div>
-                <div class="testimony ">
-                    <h2>After only two months, I feel great and I have much more energy than before.</h2>
 
+                <div class="twrap">
+                    <div class="titletag ">
+                        <h1> Testimonials from our beloved Customers</h1>
+                        <span class="iconholder "> <i class="flaticon-support "></i>     </span>
+                        <h3> Seamlessly distributing Care. </h3>
+                    </div>
+                    <div class="grid-wrapper grid-2 ">
+                        <div class="photospace ">
+                            <span> <img src="images/joe_clockwood.jpg " alt=" "> </span>
+                            <h3>Joe Clockwood - Lakeshore </h3>
+                            <p>- Lakeshore, Canada</p>
+                        </div>
+                        <div class="testimony ">
+                            <h2>I will definitely use your service again. Your service, and reliability, made a long stressful journey end positively. Thank you.</h2>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -292,8 +298,43 @@
     <!-------x------  Footer  --------x----->
     <!---------------- Jquery File -------------->
     <script src="js/jquery-3.6.0.min.js "></script>
-    <!---------------- Custom JavaScript File -------------->
-    <script src="js/main.js "></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+    <script src="js/jquery.min.js"></script> 
+    <!---------------- Scroll-Out JavaScript File --------------> 
+     <!-- <script src="js/wowslider.js"></script> -->
+    <!---------------- OWL Carousel File -------------->
+    <script src="js/owl.carousel.min.js"></script>
+ 
+
+    <script type="text/javascript">  
+        var owl = $('#clientsec.owl-carousel');
+      owl.owlCarousel({
+        center: true,
+              items:5,
+              loop:true,
+              margin:60,
+              nav:false,
+              dots:true,
+              autoplay: true,
+              slideTransition: 'linear',
+              autoplayTimeout: 2500,
+              autoplaySpeed: 2500,
+              autoplayHoverPause: true,
+              responsive:{
+                  0:{
+                      items:1
+                  },
+                  600:{
+                      items:3
+                  },
+                  1000:{
+                      items:7
+                  }
+              }
+          });
+     </script>
 </body>
 
 
